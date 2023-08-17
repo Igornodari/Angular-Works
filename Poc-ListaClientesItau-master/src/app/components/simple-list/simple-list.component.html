@@ -1,0 +1,103 @@
+<div class="container-fluid p-0">
+
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+        <a class="navbar-brand mb-2 mt-2"><img src="../../../assets/img/logo-santander-02.png " width="90"></a>
+    </nav>
+
+    <div class="mt-5"></div>
+
+    <div class="row m-4">
+        <div class="col-md-6 pl-0">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-top p-2 card-name">
+                        <h2 class="card text-center card-color text-white">Último Chamado</h2>
+                        <h2 class=" text-center mt-3 text-size" *ngIf="clientChamado.name"><strong>{{clientChamado.name}}</strong></h2>
+                        <div class="card-body p-0 d-flex justify-content-end align-items-end">
+                            <ul class="p-0 d-flex justify-content-end m-0">
+                                <li class="text-size mr-4"><strong>MESA: {{clientChamado.mesa}}</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="card card-top p-2 card-left card-last">
+                        <h2 class="card text-center card-color text-white">Histórico</h2>
+                        <div class="card-body p-0">
+                            <div class="row">
+                                <div class="col-md-6 d-flex align-items-center flex-column p-0">
+                                    <strong class="text-size">NOME</strong>
+                                    <ul class="p-0 text-left">
+                                        <li *ngFor="let client of listHistorico | slice:0:3" class="text-size">{{client.name}}</li>
+                                        <li class="text-size m-2">{{client.name}}</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 d-flex align-items-center flex-column p-0">
+                                    <strong class="text-size">MESA</strong>
+                                    <ul class="p-0 text-left">
+                                        <li *ngFor="let client of listHistorico | slice:0:3 " class="text-size">{{client.mesa}}</li>
+                                        <li class="text-size m-2">{{client.mesa}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 p-0 m-0">
+            <div class="card p-2 card-line card-left p-0">
+                <div class="card card-color text-white">
+                    <h2 class="text-center m-0">Fila</h2>
+                </div>
+                <div class="card-body p-0">
+                    <div class="row">
+                        <div class="col-md-12 d-flex">
+                            <div class="text-size w-100 p-0">
+                                <div class="row w-100 m-0">
+
+                                    <strong class="col-md-6 m-0 p-0 text-center">NOME</strong>
+                                    <strong class="col-md-6 m-0 p-0 text-center">TEMPO</strong>
+
+                                    <div *ngFor="let client of listClients | slice:0:15" class="text-size">
+                                        <div class="col-md-6 m-0 p-0 text-left d-flex justify-content-center">
+                                            <ul class="p-0 d-flex flex-column">
+                                                <li class="div">{{client.name}}</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 m-0 p-0 text-left d-flex justify-content-center">
+                                            <ul class="p-0 d-flex flex-column">
+                                                <li class="div">{{client.tempo}}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="col-md-12 fixed-bottom m-0 p-0">
+
+    <div class="col-md-4 mx-auto mb-4">
+        <div class="card card-color text-center">
+            <p class="ts text-white mt-2 p-0" id="relogio"></p>
+        </div>
+    </div>
+
+    <div class="footer border-top p-2">
+        <marquee behavior="alternate " class="text-white">
+            <a id="day"></a> -
+            <a id="footerTitle"></a>
+        </marquee>
+    </div>
+
+</footer>

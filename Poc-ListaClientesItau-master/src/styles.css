@@ -1,0 +1,60 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/src/assets/fonts/OpenSans-Regular.ttf');
+}
+
+body,
+nav {
+    background-color: #DF0000!important;
+    font-family: 'Open Sans', sans-serif!important;
+    margin: 0;
+}
+
+.div {
+    display: inline-block;
+}
+
+.card-name {
+    height: 200px;
+    /* width: 600px; */
+}
+
+.card-last {
+    height: 255px;
+    /* width: 600px; */
+}
+
+.card-line {
+    height: 480px;
+    /* width: 600px; */
+}
+
+.card-color {
+    background-color: #A80000!important;
+}
+
+h1,
+h2,
+h3,
+body {
+    font-family: 'Open Sans', sans-serif!important;
+}
+
+.text-size {
+    font-family: 'Open Sans', sans-serif!important;
+    font-size: 150%;
+}
+
+.text-size-name {
+    font-family: 'Open Sans', sans-serif!important;
+    font-size: 250%;
+}
+
+.ts {
+    font-size: 600%;
+}
+
+ul {
+    list-style-type: none;
+}
