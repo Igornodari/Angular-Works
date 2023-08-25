@@ -12,6 +12,7 @@ import { CardModule } from 'primeng/card';
 import { MessageService } from 'primeng/api';
 import { CookieService } from 'ngx-cookie-service';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { ChartModule } from 'primeng/chart';
 
 @NgModule({
   declarations: [DashboardHomeComponent],
@@ -26,6 +27,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
     ToolbarModule,
     ToastModule,
     CardModule,
+    ChartModule,
     // Shared
     SharedModule
   ],

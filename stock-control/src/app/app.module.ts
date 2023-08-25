@@ -29,7 +29,7 @@ import { MessageService } from 'primeng/api';
     CardModule,
     InputTextModule,
     ButtonModule,
-    ToastModule,
+    ToastModule
   ],
   providers: [CookieService,MessageService],
   bootstrap: [AppComponent],

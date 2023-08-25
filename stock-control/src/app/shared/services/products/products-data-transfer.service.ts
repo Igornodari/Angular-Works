@@ -28,6 +28,7 @@ export class ProductsDataTransferService {
       .subscribe({
         next: (response) => {
           if (response) {
+            console.log(response);
             this.productsDatas = response;
           }
         },
